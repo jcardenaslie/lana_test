@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "e7e6b4e1-54ff-4934-8b39-7b719f6ebf88",
+		"name": "LanaTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/baskets/e09b7f03-9cc1-4c0d-8d22-135a96f5c879",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"baskets",
+						"e09b7f03-9cc1-4c0d-8d22-135a96f5c879"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/baskets",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"baskets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"items\": [\n      {\n          \"code\": \"PEN\"\n      },\n      {\n          \"code\": \"PEN\"\n      }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/baskets",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"baskets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/baskets/03d52bc1-d542-4844-a5da-4715595cc7dd",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"baskets",
+						"03d52bc1-d542-4844-a5da-4715595cc7dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Checkout Total",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/baskets/0826d750-310a-4c7f-85df-25d129dac5ca/checkout/total",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"baskets",
+						"0826d750-310a-4c7f-85df-25d129dac5ca",
+						"checkout",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
